@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!--HTML5 DOCTYPE-->
+<html lang="en">
+  <head>
+    <title>Naughts and Crosses</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--viewport for mobile first design-->
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>〇</text></svg>" />
+
+    <link rel="stylesheet" type="text/css" href="./css/app.css" />
+    <script src="./jsApp/app.js" defer type="module"></script>
+
+    <!-- INCLUDE Bootstrap 4 from a CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center">
+        <h1 class="display-3">Naughts and Crosses</h1>
+      </div>
+      <div class="jumbotron pt-3">
+        <div class="w-50 m-auto" id="gameBoard">
+          <div class="row">
+            <div onclick="choose(0, 0)" class="col p-5 border-bottom border-right border-dark"></div>
+            <div onclick="choose(0, 1)" class="col p-5 border-bottom border-right border-dark"></div>
+            <div onclick="choose(0, 2)" class="col p-5 border-bottom border-dark"></div>
+          </div>
+          <div class="row">
+            <div onclick="choose(1, 0)" class="col p-5 border-bottom border-right border-dark"></div>
+            <div onclick="choose(1, 1)" class="col p-5 border-bottom border-right border-dark"></div>
+            <div onclick="choose(1, 2)" class="col p-5 border-bottom border-dark"></div>
+          </div>
+          <div class="row">
+            <div onclick="choose(2, 0)" class="col p-5 border-right border-dark"></div>
+            <div onclick="choose(2, 1)" class="col p-5 border-right border-dark"></div>
+            <div onclick="choose(2, 2)" class="col p-5 border-dark"></div>
+          </div>
+        </div>
+        <h1 id="turn">Crosses go first</h1>
+      </div>
+    </div>
+
+  </body>
+</html>
+<footer>
+  <p class="pl-4 py-0">v1.0.0 <a href="https://github.com/fatchild"><img class="ml-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20"></img></a></p>
+</footer>
